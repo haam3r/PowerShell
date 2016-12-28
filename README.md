@@ -20,5 +20,5 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
 Works on Python 2.7.10
 
 ```powershell
- p = subprocess.Popen(["powershell.exe", ". C:\\Users\\Andres.toptours\\Desktop\\test.ps1;", "test -Text 'test2'"], stdout=sys.stdout)
+ p = subprocess.Popen(["powershell.exe", ". C:\\Temp\\test.ps1;", "test -Text 'test2'"], stdout=sys.stdout)
  ```
