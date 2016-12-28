@@ -1,8 +1,9 @@
 # PowerShell
 Collection of PowerShell scripts
 
+## Notes
 
-## Disable PowerShell Executionpolicy
+### Disable PowerShell Executionpolicy
 
 **NB!Has to be run from elevated prompt**
 
@@ -14,7 +15,7 @@ Enc portion is base64 encoded and contains:
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
 ```
 
-## Run powershell functions from Python
+### Run powershell functions from Python
 
 Works on Python 2.7.10
 
