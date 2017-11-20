@@ -1,3 +1,5 @@
+#Requires -Version 2.0
+
 <#
 .Synopsis
    Convert Unix epoch time
@@ -9,10 +11,15 @@
 .EXAMPLE
    Convert-FromUnixDate -CSV C:\path\to\file.csv
 .EXAMPLE
+   Convert-FromUnixDate -CSV .\logs.csv -Verbose -Columns "Start Time","Stop Time"
+.EXAMPLE
    Convert-FromUnixDate -CSV C:\path\to\file.csv | Export-Csv .\converted.csv -NoTypeInformation
 .EXAMPLE
    $times = 1508242825,1508242825
    foreach ($time in $times) { Convert-FromUnixDate -Epoch $time }
+.NOTES
+   Author: haam3r
+   Version: 1.0
 #>
 function Convert-FromUnixDate
 {
