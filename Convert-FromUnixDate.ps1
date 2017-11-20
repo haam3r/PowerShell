@@ -85,7 +85,7 @@ function Convert-FromUnixDate
     }
     End
     {
-        Write-Verbose "Processed $Report.Count number of lines"
+        Write-Verbose "Processed $($Report.Count) rows"
         $Report
     }
 }
