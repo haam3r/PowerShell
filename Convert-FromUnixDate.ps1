@@ -5,7 +5,8 @@
    Convert Unix epoch time
 .DESCRIPTION
    Convert Unix epoch time to human readable timestamp.
-   Possible inputs are a single Epoch value or CSV file with the fields "Start Time" and "Stop Time"
+   Possible inputs are a single Epoch value or CSV file.
+   By default, the script expects the CSV to have the fields "Start Time" and "Stop Time". These can be modified with the -Columns parameter
 .EXAMPLE
    Convert-FromUnixDate -Epoch 1508242825
 .EXAMPLE
